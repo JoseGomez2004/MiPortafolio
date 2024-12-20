@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="prueba.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">
+            <h2>JF</h2>
+        </div>
+        
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre Mí</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#portafolio">Portafolio</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <div class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+       
+    </nav>
+
+    <header class="header">
+        <h1>Mi Portafolio</h1>
+        <input type="text" id="busqueda" placeholder="Buscar proyecto..." oninput="filtrarProyectos()">
+    </header>
+    <div class="sobre-mi" id="sobre-mi">
+        <h2>Sobre Mí</h2>
+        <p> Hello,my name is Jose Fernando Gomez Cuyare and i'm a Junior programmer with just over six months of experience with Front-end programmer <BR>
+        and would like expannd my knowledge and take on new challenge <br>
+        </p>
+        <img src="C:\Users\ferna\OneDrive\Imágenes\Camera Roll\WIN_20241118_12_02_17_Pro.jpg" widht="150">
+    </div>
+    <section class="habilidades" id="habilidades">
+        <h2 class="section-title">Mis Habilidades</h2>
+        <div class="skills-container">
+            <div class="skill-card">
+                <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png" alt="HTML5 Logo" class="skill-icon">
+                <h3>HTML5</h3>
+                <div class="skill-level">
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 70%"></div>
+                    </div>
+                    <span>Junior - 70%</span>
+                </div>
+                <ul class="skill-details">
+                    <li>Estructura semántica</li>
+                    <li>Formularios y validación</li>
+                    <li>SEO básico</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_640.png" alt="CSS3 Logo" class="skill-icon">
+                <h3>CSS3</h3>
+                <div class="skill-level">
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 65%"></div>
+                    </div>
+                    <span>Junior - 65%</span>
+                </div>
+                <ul class="skill-details">
+                    <li>Flexbox y Grid</li>
+                    <li>Responsive Design</li>
+                    <li>Animaciones básicas</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <img src="https://th.bing.com/th/id/OIP.6eJAwKYo65W5WIqe3MQl6wHaHa?rs=1&pid=ImgDetMain" alt="JavaScript Logo" class="skill-icon">
+                <h3>JavaScript</h3>
+                <div class="skill-level">
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 60%"></div>
+                    </div>
+                    <span>Junior - 60%</span>
+                </div>
+                <ul class="skill-details">
+                    <li>ES6+ Features</li>
+                    <li>DOM Manipulation</li>
+                    <li>Async/Await</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="portafolio" id="portafolio">
+        <h2 class="section-title">Mis Proyectos</h2>
+        <div class="proyectos-grid">
+            <div class="proyecto-card">
+                <img src="C:\Users\ferna\OneDrive\Imágenes\Screenshots\Captura de pantalla 2024-12-17 004813.png" alt="Calculadora" class="proyecto-imagen">
+                <div class="proyecto-info">
+                    <h3>Calculadora Simple</h3>
+                    <p>Una calculadora funcional construida con HTML, CSS y JavaScript que permite realizar operaciones básicas.</p>
+                    <ul class="proyecto-tecnologias">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                    <div class="proyecto-enlaces">
+                        <a href="TestCalculadora/html.html" target="_blank" class="btn-ver-proyecto">Ver Demo</a>
+                        <a href="https://github.com/JoseGomez2004/CalculadoraBasica/tree/main" target="_blank" class="btn-codigo">Ver Código</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="proyecto-card">
+                <img src="ruta/a/imagen/lista.png" alt="Lista de Hechos" class="proyecto-imagen">
+                <div class="proyecto-info">
+                    <h3>Lista de Hechos</h3>
+                    <p>Aplicación para gestionar tareas diarias con funcionalidades de agregar, eliminar y marcar como completadas.</p>
+                    <ul class="proyecto-tecnologias">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                    <div class="proyecto-enlaces">
+                        <a href="ListaHechos/ListaHechos.html" target="_blank" class="btn-ver-proyecto">Ver Demo</a>
+                        <a href="#" target="_blank" class="btn-codigo">Ver Código</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="proyecto-card">
+                <img src="ruta/a/imagen/productos.png" alt="Página de Productos" class="proyecto-imagen">
+                <div class="proyecto-info">
+                    <h3>Página de Productos</h3>
+                    <p>Catálogo de productos con filtros, búsqueda y carrito de compras implementado.</p>
+                    <ul class="proyecto-tecnologias">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                    <div class="proyecto-enlaces">
+                        <a href="PaginaProductos/PaginaProductos.html" target="_blank" class="btn-ver-proyecto">Ver Demo</a>
+                        <a href="#" target="_blank" class="btn-codigo">Ver Código</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="proyecto-card">
+                <img src="ruta/a/imagen/tiempo.png" alt="Aplicación del Tiempo" class="proyecto-imagen">
+                <div class="proyecto-info">
+                    <h3>Aplicación del Tiempo</h3>
+                    <p>Aplicación del clima que muestra el pronóstico actual y de los próximos días utilizando una API.</p>
+                    <ul class="proyecto-tecnologias">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>API</li>
+                    </ul>
+                    <div class="proyecto-enlaces">
+                        <a href="AplicacionTiempo/AplicacionTiempo.html" target="_blank" class="btn-ver-proyecto">Ver Demo</a>
+                        <a href="#" target="_blank" class="btn-codigo">Ver Código</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacto" id="contacto">
+        <h2 class="section-title">Contacto</h2>
+        <div class="contacto-contenido">
+            <div class="contacto-info">
+                <h3>¡Hablemos!</h3>
+                <p>Estoy interesado en oportunidades de desarrollo web. Si tienes alguna pregunta o propuesta, no dudes en contactarme.</p>
+                
+                <div class="contacto-detalles">
+                    <div class="contacto-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>Email: smokdre1234@gmail.com</p>
+                    </div>
+                    <div class="contacto-item">
+                        <i class="fas fa-phone"></i>
+                        <p>Teléfono: +51 123 456 789</p>
+                    </div>
+                    <div class="contacto-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Ubicación: Cucuta, Colombia</p>
+                    </div>
+                </div>
+
+                <div class="redes-sociales">
+                    <a href="https://linkedin.com/in/tu-perfil" target="_blank" class="red-social">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/settings/profile" target="_blank" class="red-social">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://twitter.com/tu-usuario" target="_blank" class="red-social">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+
+            <form class="formulario-contacto">
+                <div class="form-grupo">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-grupo">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-grupo">
+                    <label for="asunto">Asunto</label>
+                    <input type="text" id="asunto" name="asunto" required>
+                </div>
+                <div class="form-grupo">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+   
+    <footer>
+        <p>&copy; 2024 Mi Señor Jose. Todos los derechos reservados.</p>
+    </footer>
+    <script src="prueba.js"></script>
+</body>
+</html>
